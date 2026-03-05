@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GAN-Based Crop Disease Detection Using Leaf Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🍅 GAN-Based Crop Disease Detection Using Leaf Images</h1>
+
+    <input type="file" id="imageInput">
+    <button onclick="detectDisease()">Detect Disease</button>
+
+    <div id="result"></div>
+
+    <hr>
+
+    <h2>🧠 Generate Synthetic Image</h2>
+    <button onclick="generateImage()">Generate Image</button>
+
+    <div id="ganResult"></div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
